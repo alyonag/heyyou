@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html>
+<head>
+<style>
+  fieldset {background:lightyellow; border:10px solid yellow; margin-bottom:10px; width:720px}
+  label {text-align:top; text-align:right; width:180px; display:inline-block}
+  #checkbox-radio {width:auto; text-align:top; text-align:right}
+  #radio {width:auto; text-align:top; text-align:right}
+  #range {text-align:center}
+  #word1 {background: pink}
+  #word2 {background: green}
+  textarea {width:360px; height:50px}
+  
+
+  
+</style> 
+</head>
+<body>
+<form method="post" enctype="multipart/form-data" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+ 
+ <h1> <b> Please Enter Your Details For Our Dating Website! </b> </h1><br>
+ 
+<fieldset>
+<legend> Your face </legend>
+    <label for="image"> Your image: </label>
+ <input type="file" name="filetoupload" id="preview"> <br>
+  <label for="image"> Image preview:</label>
+  </fieldset> <br>
+  
+  <fieldset>
+<legend> Your General Details </legend>
+
+  <label for="name">Name:</label>
+  <input type="text" name="name" placeholder="Your full name" required> <br>
+ 
+ <label for="gender" id="radio"> Gender: </label>
+ 
+<input type="radio" name="gender" value="male"> Male 
+<input type="radio" name="gender" value="female"> Female <br>
+  
+  <label for="age"> Age: </label>
+<input type="number" name="age" value="18" required> <br>
+
+<label for="birthday"> Date of birth: </label>
+<input type="date" name="birthday"> <br> 
+
+<label for="color"> Favorite color: </label>
+<input type="color" name="color"> <br>
+
+<label for="country"> Which country: </label>
+<select name="cities">
+    <option value="no selection">  </option>
+    <option value="United States"> United States </option>
+	<option value="Canada"> Canada </option>
+    <option value="India"> India </option>
+	<option value="Russia"> Russia </option>
+    <option value="France"> France </option>
+</select> <br> <br>
+  
+  </fieldset> <br>
+  
+  <fieldset>
+<legend> Your Indicators </legend>
+  <label for="height"> Height: </label> 
+ <span id="word1"> Short </span> <input type="range" min="0" max="100" step="5" value="50" name="mood"> <span id="word2">Tall </span> <br>  
+  
+    <label for="salary"> Salary: </label>
+<span id="word1"> Poor </span> <input type="range" min="0" max="100" step="5" value="50" name="mood"> <span id="word2">  Rich </span> <br> 
+  
+   </fieldset> <br>
+   
+   <fieldset>
+<legend> Your Contact Information </legend>
+<label for="salary"> Email: </label>
+<input type="email" name="email" required> <br> 
+<label for="salary"> Mobile: </label>
+<input type="tel" name="email"> <br> 
+<label for="salary"> Address: </label>
+<textarea rows="3" cols="60" name="address"> 
+ </textarea>
+ <br>
+
+<label for="method" id="checkbox-radio"> Method to contact you: </label>
+
+<input type="checkbox" name="method" value="Email"> Email
+<input type="checkbox" name="method" value="Whatsapp"> Whatsapp 
+<input type="checkbox" name="method" value="In-App-Chat"> In-App-Chat <br>
+
+   </fieldset> <br>
+ 
+ <input type="submit" value="Submit">
+
+</form>
+
+   
+   
+  </body>
+  </html>
